@@ -11,7 +11,7 @@
         {{store.product.name}}
         <em class="pull-right">${{store.product.price}}</em>
     </h3>
-    <button>Add to Cart</button>
+    <button ng-show="store.product.canPurchase">Add to Cart</button>
 </div>
 </body>
 </html>
