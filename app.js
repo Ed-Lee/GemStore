@@ -1,20 +1,21 @@
-(function () {
+(function() {
     var app = angular.module('gemStore', []);
 
-    app.controller('StoreController', function () {
+    app.controller('StoreController', function(){
         this.products = gems;
     });
 
-    app.controller('TabController', function () {
+    app.controller('TabController', function(){
         this.tab = 1;
-        this.setTab = function (selectedTab) {
-            this.tab = selectedTab;
-        }
-        this.isSet = function (tab) {
-            return this.tab === tab;
-        }
-    });
 
+        this.setTab = function(newValue){
+            this.tab = newValue;
+        };
+
+        this.isSet = function(tabName){
+            return this.tab === tabName;
+        };
+    });
 
     var gems = [
         {
@@ -30,20 +31,17 @@
                 "images/gem-05.gif",
                 "images/gem-09.gif"
             ],
-            reviews: [
-                {
-                    stars: 5,
-                    body: "I love this gem!",
-                    author: "joe@example.org",
-                    createdOn: 1397490980837
-                },
-                {
-                    stars: 1,
-                    body: "This gem sucks.",
-                    author: "tim@example.org",
-                    createdOn: 1397490980837
-                }
-            ]
+            reviews: [{
+                stars: 5,
+                body: "I love this gem!",
+                author: "joe@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "This gem sucks.",
+                author: "tim@example.org",
+                createdOn: 1397490980837
+            }]
         },
         {
             name: 'Bloodstone',
@@ -58,20 +56,17 @@
                 "images/gem-03.gif",
                 "images/gem-04.gif",
             ],
-            reviews: [
-                {
-                    stars: 3,
-                    body: "I think this gem was just OK, could honestly use more shine, IMO.",
-                    author: "JimmyDean@example.org",
-                    createdOn: 1397490980837
-                },
-                {
-                    stars: 4,
-                    body: "Any gem with 12 faces is for me!",
-                    author: "gemsRock@example.org",
-                    createdOn: 1397490980837
-                }
-            ]
+            reviews: [{
+                stars: 3,
+                body: "I think this gem was just OK, could honestly use more shine, IMO.",
+                author: "JimmyDean@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 4,
+                body: "Any gem with 12 faces is for me!",
+                author: "gemsRock@example.org",
+                createdOn: 1397490980837
+            }]
         },
         {
             name: 'Zircon',
@@ -86,26 +81,22 @@
                 "images/gem-07.gif",
                 "images/gem-09.gif"
             ],
-            reviews: [
-                {
-                    stars: 1,
-                    body: "This gem is WAY too expensive for its rarity value.",
-                    author: "turtleguyy@example.org",
-                    createdOn: 1397490980837
-                },
-                {
-                    stars: 1,
-                    body: "BBW: High Shine != High Quality.",
-                    author: "LouisW407@example.org",
-                    createdOn: 1397490980837
-                },
-                {
-                    stars: 1,
-                    body: "Don't waste your rubles!",
-                    author: "nat@example.org",
-                    createdOn: 1397490980837
-                }
-            ]
+            reviews: [{
+                stars: 1,
+                body: "This gem is WAY too expensive for its rarity value.",
+                author: "turtleguyy@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "BBW: High Shine != High Quality.",
+                author: "LouisW407@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "Don't waste your rubles!",
+                author: "nat@example.org",
+                createdOn: 1397490980837
+            }]
         }
     ];
 })();
