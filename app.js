@@ -18,7 +18,7 @@
     });
 
     app.controller('GalleryController', function(){
-
+        this.current = 0;
     });
 
 
