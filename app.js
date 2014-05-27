@@ -4,6 +4,10 @@
     app.controller('StoreController', function(){
         this.products = gems;
     });
+    
+    app.controller('TabController', function () {
+
+    });
 
 
 
