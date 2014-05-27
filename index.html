@@ -17,7 +17,7 @@
             <img ng-src="{{product.images[0]}}"/>
         </div>
         <ul class="img-thumbnails clearfix">
-            <li class="small-image pull-left thumbnail">
+            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
                 <img ng-src="{{product.images[0]}}"/>
             </li>
         </ul>
