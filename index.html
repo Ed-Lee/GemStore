@@ -31,11 +31,11 @@
     <section class="tab" ng-controller="TabController as tabCtrl">
         <ul class="nav nav-pills">
             <li>
-                <a href>Description</a></li>
+                <a href ng-click="tabCtrl.setTab(1)">Description</a></li>
             <li>
-                <a href>Specs</a></li>
+                <a href ng-click="tabCtrl.setTab(2)">Specs</a></li>
             <li>
-                <a href>Reviews</a></li>
+                <a href ng-click="tabCtrl.setTab(3)">Reviews</a></li>
         </ul>
         <div>
             <h4>Description</h4>
