@@ -30,11 +30,11 @@
 
     <section class="tab" ng-controller="TabController as tabCtrl">
         <ul class="nav nav-pills">
-            <li>
+            <li ng-class="{active: tabCtrl.isSet(1)}">
                 <a href ng-click="tabCtrl.setTab(1)">Description</a></li>
-            <li>
+            <li ng-class="{active: tabCtrl.isSet(2)}">
                 <a href ng-click="tabCtrl.setTab(2)">Specs</a></li>
-            <li>
+            <li ng-class="{active: tabCtrl.isSet(3)}">
                 <a href ng-click="tabCtrl.setTab(3)">Reviews</a></li>
         </ul>
         <div ng-show="tabCtrl.isSet(1)">
