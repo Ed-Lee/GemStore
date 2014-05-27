@@ -10,6 +10,9 @@
         this.setTab = function (selectedTab) {
             this.tab = selectedTab;
         }
+        this.isSet = function (tab) {
+            return this.tab === tab;
+        }
     });
 
 
