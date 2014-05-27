@@ -17,6 +17,11 @@
         };
     });
 
+    app.controller('GalleryController', function(){
+
+    });
+
+
     var gems = [
         {
             name: 'Azurite',
