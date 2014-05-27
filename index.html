@@ -37,15 +37,15 @@
             <li>
                 <a href ng-click="tabCtrl.setTab(3)">Reviews</a></li>
         </ul>
-        <div>
+        <div ng-show="tabCtrl.isSet(1)">
             <h4>Description</h4>
             <blockquote></blockquote>
         </div>
-        <div>
+        <div ng-show="tabCtrl.isSet(2)">
             <h4>Specs</h4>
             <blockquote>Shine:</blockquote>
         </div>
-        <div>
+        <div ng-show="tabCtrl.isSet(3)">
             <h4>Reviews</h4>
             <blockquote></blockquote>
         </div>
