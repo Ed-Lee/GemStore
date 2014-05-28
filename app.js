@@ -24,6 +24,9 @@
         };
     });
 
+    app.controller('ReviewController', function () {
+
+    });
 
     var gems = [
         {
