@@ -68,7 +68,7 @@
                 <!--  Review Form -->
                 <h4>Submit a Review</h4>
                 <fieldset class="form-group">
-                    <select class="form-control" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars">
+                    <select ng-model="review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars">
                         <option value="">Rate the Product</option>
                     </select>
                 </fieldset>
