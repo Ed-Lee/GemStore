@@ -76,7 +76,7 @@
                     <textarea ng-model="review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
                 </fieldset>
                 <fieldset class="form-group">
-                    <input type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
+                    <input ng-model="review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
                 </fieldset>
                 <fieldset class="form-group">
                     <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
