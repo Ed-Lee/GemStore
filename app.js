@@ -26,6 +26,9 @@
 
     app.controller('ReviewController', function () {
         this.review = {};
+        this.addReview = function () {
+            
+        }
     });
 
     var gems = [
