@@ -26,7 +26,7 @@
 
     app.controller('ReviewController', function () {
         this.review = {};
-        this.addReview = function () {
+        this.addReview = function (product) {
             
         }
     });
