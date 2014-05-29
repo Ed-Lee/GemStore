@@ -70,7 +70,8 @@
                 this.setCurrent = function (value) {
                     this.current = value || 0;
                 };
-            }
+            },
+            controllerAs: 'gallery'
         };
     });
 
