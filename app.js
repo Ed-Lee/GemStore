@@ -54,6 +54,12 @@
         };
     });
 
+    app.directive('productTabs', function () {
+        return {
+            restrict: 'E'
+        };
+    });
+
     var gems = [
         {
             name: 'Azurite',
