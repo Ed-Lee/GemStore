@@ -12,23 +12,32 @@
 
     <h2 class="text-center">- an Angular store -</h2>
 </header>
-<div class="list-group-item" ng-repeat="product in store.products">
-    <h3>
-        {{product.name}}
-        <em class="pull-right">{{product.price | currency}}</em>
-    </h3>
-    <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
-        <div class="img-wrap">
-            <img ng-src="{{product.images[gallery.current]}}"/>
-        </div>
-        <ul class="img-thumbnails clearfix">
-            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-                <img ng-click="gallery.setCurrent($index)" ng-src="{{image}}"/>
-            </li>
-        </ul>
-    </section>
 
-    <product-tabs></product-tabs>
+<!--Products Container-->
+<div class="list-group">
+
+    <!--product Container-->
+    <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>
+            {{product.name}}
+            <em class="pull-right">{{product.price | currency}}</em>
+        </h3>
+
+        <!--Image Gallery-->
+        <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
+            <div class="img-wrap">
+                <img ng-src="{{product.images[gallery.current]}}"/>
+            </div>
+            <ul class="img-thumbnails clearfix">
+                <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+                    <img ng-click="gallery.setCurrent($index)" ng-src="{{image}}"/>
+                </li>
+            </ul>
+        </section>
+
+        <!--Product Tabs-->
+        <product-tabs></product-tabs>
+    </div>
 </div>
 </body>
 </html>
