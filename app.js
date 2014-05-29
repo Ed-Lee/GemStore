@@ -63,7 +63,8 @@
 
     app.directive('productGallery', function () {
         return {
-            restrict: 'E'
+            restrict: 'E',
+            templateUrl: "product-gallery.html"
         };
     });
 
