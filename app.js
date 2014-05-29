@@ -1,12 +1,12 @@
 (function () {
     var app = angular.module('gemStore', ['store-directives']);
 
-    app.controller('StoreController', function () {
+    app.controller('StoreController', ['$http',function ($http) {
         //this.products = gems;
         var store = this;
         store.products = {};
 
-    });
+    }]);
 
     app.controller('ReviewController', function () {
         this.review = {};
