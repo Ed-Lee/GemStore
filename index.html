@@ -58,7 +58,8 @@
             </ul>
             <!--  Review Form -->
             <form name="reviewForm" ng-controller="ReviewController as reviewCtrl"
-                    ng-submit="reviewCtrl.addReview(product)">
+                    ng-submit="reviewCtrl.addReview(product)"
+                    novalidate>
                 <!--  Live Preview -->
                 <blockquote>
                     <strong>{{reviewCtrl.review.stars}} Stars</strong>
