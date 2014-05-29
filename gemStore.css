@@ -84,3 +84,7 @@ img{
 .btn-primary:hover {
     background: #ac005f;
 }
+
+.ng-dirty.ng-invalid {
+    border-color: red;
+}
