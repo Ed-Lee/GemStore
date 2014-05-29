@@ -56,7 +56,8 @@
 
     app.directive('productTabs', function () {
         return {
-            restrict: 'E'
+            restrict: 'E',
+            templateUrl: "product-tabs.html"
         };
     });
 
