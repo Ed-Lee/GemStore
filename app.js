@@ -68,7 +68,8 @@
                 this.isSet = function (tabName) {
                     return this.tab === tabName;
                 };
-            }
+            },
+            controllerAs: 'tabCtrl'
         };
     });
 
